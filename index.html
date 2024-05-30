@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- punto 1 -->
+    <header>
+        <h1>Guardar Información Personal</h1>
+    </header>
+    <form id="personalInfoForm">
+        <fieldset>
+            <legend>Datos</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="recordar">¿Algo para recordar?: </label>
+            <textarea name="recordar" id="recordar"></textarea><br>
+            
+            <button class="btn">Guardar</button>
+        </fieldset>
+    </form>
+
+    <div id="infoContainer">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
